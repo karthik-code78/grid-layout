@@ -1,0 +1,77 @@
+.grid {
+  &-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 10px;
+    column-gap: 10px;
+  }
+  &-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 2;
+  }
+
+  &-item0 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+
+  &-item1 {
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  @for $i from 2 through 10 {
+    &-item#{$i} {
+      // margin-top: 90px;
+      grid-column-end: 5;
+    }
+  }
+
+  &-container-1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  &-item-new {
+    // border: 1px solid rgba(0, 0, 0, 0.8);
+    // padding: 10px;
+    // font-size: 30px;
+    // text-align: center;
+
+    &-item1 {
+      text-align: left;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    &-item2 {
+      text-align: left;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    &-item3 {
+      text-align: left;
+    }
+  }
+}
+
+// independent styles
+.vl {
+  border-left: 2px solid black;
+  height: 70px;
+  margin-top: -7px;
+}
