@@ -46,7 +46,7 @@
   }
 
   &-item-new {
-    // border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
     // padding: 10px;
     // font-size: 30px;
     // text-align: center;
@@ -59,12 +59,19 @@
 
     &-item2 {
       text-align: left;
-      grid-column-start: 2;
-      grid-column-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
     }
 
     &-item3 {
       text-align: left;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    &-item4 {
+      grid-column-start: 6;
+      grid-column-end: 7;
     }
   }
 }
